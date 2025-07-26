@@ -231,12 +231,10 @@ function createVideoCard(video) {
     
     return `
         <div class="video-card slide-in">
-            <div class="match-type">${video.match_type}</div>
             <h3 class="video-title">${video.title}</h3>
             <div class="video-meta">
                 <span>${video.year}</span>
                 <span class="video-rating">★ ${video.rating}</span>
-                <span>Score: ${video.score.toFixed(2)}</span>
             </div>
             <div class="video-genres">
                 <strong>Genres:</strong> ${genreTags}
@@ -284,9 +282,6 @@ function findSimilarVideos(videoId) {
 function displaySimilarVideos(videos) {
     similarVideosList.innerHTML = videos.map(video => `
         <div class="similar-video-item">
-            <div class="similarity-score">
-                ${(video.similarity_score * 100).toFixed(0)}% match
-            </div>
             <h4>${video.title} (${video.year})</h4>
             <div class="video-genres">
                 ${video.genre.map(g => `<span class="genre-tag">${g}</span>`).join('')}

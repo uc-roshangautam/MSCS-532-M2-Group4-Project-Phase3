@@ -354,18 +354,6 @@ body {
     background: #cbd5e0;
 }
 
-.match-type {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
-    padding: 4px 8px;
-    border-radius: 6px;
-    font-size: 0.7rem;
-    font-weight: 500;
-}
-
 /* No Results */
 .no-results {
     text-align: center;
@@ -460,15 +448,6 @@ body {
     padding: 15px;
     border-radius: 10px;
     border-left: 4px solid #667eea;
-}
-
-.similarity-score {
-    background: #667eea;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 12px;
-    font-size: 0.7rem;
-    float: right;
 }
 
 /* Footer */
