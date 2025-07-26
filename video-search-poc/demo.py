@@ -272,7 +272,7 @@ class VideoSearchDemo:
         print("\n3. SIMILARITY WITH NON-EXISTENT VIDEO")
         print("-" * 40)
         print("3.1 Find similar videos for non-existent video ID:")
-        results = self.search_system.get_similar_videos(999)
+        results = self.search_system.get_similar_videos(9999)
         print(f"  Results: {len(results)} (should be 0)")
         
         print("\n4. COMPLEX SEARCH WITH NO MATCHES")
