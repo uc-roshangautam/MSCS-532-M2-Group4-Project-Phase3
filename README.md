@@ -1,6 +1,6 @@
 # Video Search Platform - Advanced Data Structures Implementation
 
-##Project Phase 3: Optimization, Scaling, and Final Evaluation
+## Project Phase 3: Optimization, Scaling, and Final Evaluation
 
 This repository contains a comprehensive implementation of an advanced video search platform that demonstrates the integration of three fundamental data structures: **Hash Tables**, **Trie Trees**, and **Graphs**. The system addresses the limitations of traditional video streaming platforms that only support exact title matching.
 
