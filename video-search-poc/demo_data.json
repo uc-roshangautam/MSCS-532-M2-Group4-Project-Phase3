@@ -1,0 +1,135 @@
+[
+	{
+		"video_id": 1,
+		"title": "The Shawshank Redemption",
+		"year": 1994,
+		"genre": ["Drama", "Crime"],
+		"actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"],
+		"directors": ["Frank Darabont"],
+		"keywords": ["prison", "hope", "friendship", "redemption"],
+		"rating": 9.3,
+		"description": "Two imprisoned men bond over years, finding solace and redemption through acts of common decency."
+	},
+	{
+		"video_id": 2,
+		"title": "The Godfather",
+		"year": 1972,
+		"genre": ["Drama", "Crime"],
+		"actors": ["Marlon Brando", "Al Pacino", "James Caan"],
+		"directors": ["Francis Ford Coppola"],
+		"keywords": ["mafia", "family", "power", "violence"],
+		"rating": 9.2,
+		"description": "The aging patriarch of an organized crime dynasty transfers control to his reluctant son."
+	},
+	{
+		"video_id": 3,
+		"title": "The Dark Knight",
+		"year": 2008,
+		"genre": ["Action", "Crime", "Drama"],
+		"actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+		"directors": ["Christopher Nolan"],
+		"keywords": ["superhero", "batman", "joker", "justice"],
+		"rating": 9.0,
+		"description": "Batman faces the Joker, a criminal mastermind who seeks to undermine the city's faith in its heroes."
+	},
+	{
+		"video_id": 4,
+		"title": "Forrest Gump",
+		"year": 1994,
+		"genre": ["Drama", "Romance"],
+		"actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+		"directors": ["Robert Zemeckis"],
+		"keywords": ["life", "love", "destiny", "american history"],
+		"rating": 8.8,
+		"description": "The life story of a man with a low IQ who achieves great things through kindness and determination."
+	},
+	{
+		"video_id": 5,
+		"title": "Inception",
+		"year": 2010,
+		"genre": ["Action", "Sci-Fi", "Thriller"],
+		"actors": ["Leonardo DiCaprio", "Marion Cotillard", "Tom Hardy"],
+		"directors": ["Christopher Nolan"],
+		"keywords": ["dreams", "reality", "mind", "heist"],
+		"rating": 8.8,
+		"description": "A thief who enters people's dreams to steal secrets gets the inverse task of planting an idea."
+	},
+	{
+		"video_id": 6,
+		"title": "The Matrix",
+		"year": 1999,
+		"genre": ["Action", "Sci-Fi"],
+		"actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+		"directors": ["Lana Wachowski", "Lilly Wachowski"],
+		"keywords": ["virtual reality", "philosophy", "choice", "rebellion"],
+		"rating": 8.7,
+		"description": "A hacker discovers reality as he knows it is actually a computer simulation."
+	},
+	{
+		"video_id": 7,
+		"title": "Goodfellas",
+		"year": 1990,
+		"genre": ["Biography", "Crime", "Drama"],
+		"actors": ["Robert De Niro", "Ray Liotta", "Joe Pesci"],
+		"directors": ["Martin Scorsese"],
+		"keywords": ["mafia", "crime", "loyalty", "betrayal"],
+		"rating": 8.7,
+		"description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen."
+	},
+	{
+		"video_id": 8,
+		"title": "Pulp Fiction",
+		"year": 1994,
+		"genre": ["Crime", "Drama"],
+		"actors": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"],
+		"directors": ["Quentin Tarantino"],
+		"keywords": ["violence", "redemption", "dialogue", "nonlinear"],
+		"rating": 8.9,
+		"description": "The lives of two mob hitmen, a boxer, and others intertwine in four tales of violence and redemption."
+	},
+	{
+		"video_id": 9,
+		"title": "The Lord of the Rings: The Return of the King",
+		"year": 2003,
+		"genre": ["Adventure", "Drama", "Fantasy"],
+		"actors": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen"],
+		"directors": ["Peter Jackson"],
+		"keywords": ["fantasy", "epic", "friendship", "good vs evil"],
+		"rating": 8.9,
+		"description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam."
+	},
+	{
+		"video_id": 10,
+		"title": "Fight Club",
+		"year": 1999,
+		"genre": ["Drama"],
+		"actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+		"directors": ["David Fincher"],
+		"keywords": ["society", "identity", "rebellion", "consumerism"],
+		"rating": 8.8,
+		"description": "An insomniac office worker forms an underground fight club that evolves into something much more."
+	},
+	{
+		"video_id": 11,
+		"title": "Interstellar",
+		"year": 2014,
+		"genre": ["Adventure", "Drama", "Sci-Fi"],
+		"actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"],
+		"directors": ["Christopher Nolan"],
+		"keywords": ["space", "time", "love", "survival"],
+		"rating": 8.6,
+		"description": "A team of explorers travel through a wormhole in space in an attempt to save humanity."
+	},
+	{
+		"video_id": 12,
+		"title": "The Avengers",
+		"year": 2012,
+		"genre": ["Action", "Adventure", "Sci-Fi"],
+		"actors": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
+		"directors": ["Joss Whedon"],
+		"keywords": ["superhero", "team", "action", "marvel"],
+		"rating": 8.0,
+		"description": "Earth's mightiest heroes must come together to stop an alien invasion."
+	}
+]
+

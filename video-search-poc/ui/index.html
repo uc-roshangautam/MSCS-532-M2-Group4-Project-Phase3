@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Search Platform - Advanced Data Structures Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Video Search Platform</h1>
+            <p class="subtitle">Advanced Data Structures Integration Demo</p>
+            <div class="tech-stack">
+                <span class="tech-badge">Hash Tables</span>
+                <span class="tech-badge">Trie Trees</span>
+                <span class="tech-badge">Graphs</span>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box-wrapper">
+                    <input type="text" 
+                           id="searchInput" 
+                           class="search-input" 
+                           placeholder="Search for movies by title, actor, genre, or year..."
+                           autocomplete="off">
+                    <button id="searchBtn" class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <div id="autocompleteDropdown" class="autocomplete-dropdown"></div>
+                </div>
+
+                <div class="search-options">
+                    <div class="search-type-group">
+                        <label>Search Type:</label>
+                        <select id="searchType" class="search-type-select">
+                            <option value="auto">Smart Search (Auto-detect)</option>
+                            <option value="title">Title</option>
+                            <option value="actor">Actor</option>
+                            <option value="genre">Genre</option>
+                            <option value="year">Year</option>
+                        </select>
+                    </div>
+                    <div class="search-stats" id="searchStats"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching...</p>
+            </div>
+
+            <div id="resultsContainer" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2 id="resultsTitle">Search Results</h2>
+                    <div id="resultsCount" class="results-count"></div>
+                </div>
+                <div id="resultsList" class="results-list"></div>
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>No results found</h3>
+                <p>Try different search terms or check the suggestions below:</p>
+                <div class="search-suggestions">
+                    <button class="suggestion-btn" onclick="performSearch('The Matrix')">The Matrix</button>
+                    <button class="suggestion-btn" onclick="performSearch('Tom Hanks')">Tom Hanks</button>
+                    <button class="suggestion-btn" onclick="performSearch('Action')">Action Movies</button>
+                    <button class="suggestion-btn" onclick="performSearch('1994')">Movies from 1994</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Similar Videos Modal -->
+        <div id="similarModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Similar Movies</h3>
+                    <button class="close-btn" onclick="closeSimilarModal()">&times;</button>
+                </div>
+                <div id="similarVideosList" class="similar-videos-list"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="features-highlight">
+                <h3>Demonstrated Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Hash Tables:</strong> O(1) metadata lookup with multiple indexes
+                    </div>
+                    <div class="feature-item">
+                        <strong>Trie Trees:</strong> Fuzzy search, autocomplete, wildcard matching
+                    </div>
+                    <div class="feature-item">
+                        <strong>Graphs:</strong> Content similarity analysis and recommendations
+                    </div>
+                    <div class="feature-item">
+                        <strong>Integration:</strong> Smart search combining all data structures
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                MSCS-532 Advanced Data Structures & Algorithms - Phase 2 Implementation
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
