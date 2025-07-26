@@ -903,14 +903,14 @@
   },
   {
     "video_id": 83,
-    "title": "The Pianist",
-    "year": 2002,
-    "genre": ["Biography", "Drama", "History"],
-    "actors": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay"],
-    "directors": ["Roman Polanski"],
-    "keywords": ["holocaust", "survival", "music", "war"],
-    "rating": 8.5,
-    "description": "A Polish Jewish pianist struggles to survive the destruction of the Warsaw ghetto during World War II."
+    "title": "A Ghost Story",
+    "year": 2017,
+    "genre": ["Drama", "Fantasy"],
+    "actors": ["Casey Affleck", "Rooney Mara"],
+    "directors": ["David Lowery"],
+    "keywords": ["time", "loss", "memory", "mourning"],
+    "rating": 7.0,
+    "description": "A deceased man returns as a ghost in a simple white sheet to watch his life unfold."
   },
   {
     "video_id": 84,
@@ -1143,16 +1143,16 @@
     "rating": 7.8,
     "description": "A Hollywood stunt driver moonlights as a getaway driver and finds himself in danger."
   },
-  {
+   {
     "video_id": 105,
-    "title": "Blade Runner",
-    "year": 1982,
-    "genre": ["Sci‑Fi", "Thriller", "Drama"],
-    "actors": ["Harrison Ford", "Rutger Hauer", "Sean Young"],
-    "directors": ["Ridley Scott"],
-    "keywords": ["androids", "identity", "dystopia", "future"],
-    "rating": 8.2,
-    "description": "A blade runner hunts fugitives in a neon‑soaked dystopian Los Angeles."
+    "title": "Fargo",
+    "year": 1996,
+    "genre": ["Crime", "Drama", "Thriller"],
+    "actors": ["Frances McDormand", "William H. Macy"],
+    "directors": ["Joel Coen", "Ethan Coen"],
+    "keywords": ["crime", "snow", "dark comedy", "investigation"],
+    "rating": 8.1,
+    "description": "A car salesman’s bungled crime brings an unflappable police chief to the case in snowy Minnesota."
   },
   {
     "video_id": 106,
@@ -1200,14 +1200,14 @@
   },
   {
     "video_id": 110,
-    "title": "The Truman Show",
-    "year": 1998,
-    "genre": ["Drama", "Mystery", "Sci‑Fi"],
-    "actors": ["Jim Carrey", "Ed Harris", "Laura Linney"],
-    "directors": ["Peter Weir"],
-    "keywords": ["reality tv", "control", "identity", "illusion"],
-    "rating": 8.1,
-    "description": "A man discovers his entire life is a staged television show."
+    "title": "The Shining",
+    "year": 1980,
+    "genre": ["Drama", "Horror"],
+    "actors": ["Jack Nicholson", "Shelley Duvall"],
+    "directors": ["Stanley Kubrick"],
+    "keywords": ["isolation", "haunting", "madness", "supernatural"],
+    "rating": 8.4,
+    "description": "A family becomes caretakers of a remote hotel with a sinister past and terrifying influence."
   },
   {
     "video_id": 111,
@@ -1310,13 +1310,13 @@
   },
   {
     "video_id": 120,
-    "title": "The Grand Budapest Hotel",
-    "year": 2014,
-    "genre": ["Adventure", "Comedy", "Drama"],
-    "actors": ["Ralph Fiennes", "Tony Revolori", "F. Murray Abraham"],
-    "directors": ["Wes Anderson"],
-    "keywords": ["hotel", "quirky", "crime", "Europe"],
-    "rating": 8.1,
-    "description": "A whimsical tale of a concierge and lobby boy in a grand interwar hotel."
+    "title": "Yojimbo",
+    "year": 1961,
+    "genre": ["Action", "Crime", "Drama"],
+    "actors": ["Toshirô Mifune"],
+    "directors": ["Akira Kurosawa"],
+    "keywords": ["samurai", "double agents", "town", "strategy"],
+    "rating": 8.2,
+    "description": "A cunning ronin plays two rival gangs against each other in a small town."
   }
 ]
