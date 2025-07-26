@@ -137,6 +137,12 @@ class VideoSearchHandler(BaseHTTPRequestHandler):
         
         elif search_type == 'title':
             results = self.search_system.search_by_title(query, 'fuzzy', limit)
+        elif search_type == 'title_exact':
+            results = self.search_system.search_by_title(query, 'exact', limit)
+        elif search_type == 'title_prefix':
+            results = self.search_system.search_by_title(query, 'prefix', limit)
+        elif search_type == 'title_wildcard':
+            results = self.search_system.search_by_title(query, 'wildcard', limit)
         elif search_type == 'actor':
             results = self.search_system.search_by_actor(query, limit)
         elif search_type == 'genre':

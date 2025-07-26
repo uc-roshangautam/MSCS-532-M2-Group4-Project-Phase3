@@ -26,7 +26,7 @@
                     <input type="text" 
                            id="searchInput" 
                            class="search-input" 
-                           placeholder="Search for movies by title, actor, genre, or year..."
+                           placeholder="Search for movies by title, actor, genre, or year... (Use * for wildcard)"
                            autocomplete="off">
                     <button id="searchBtn" class="search-btn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -42,7 +42,10 @@
                         <label>Search Type:</label>
                         <select id="searchType" class="search-type-select">
                             <option value="auto">Smart Search (Auto-detect)</option>
-                            <option value="title">Title</option>
+                            <option value="title">Title (Fuzzy)</option>
+                            <option value="title_exact">Title (Exact)</option>
+                            <option value="title_prefix">Title (Prefix)</option>
+                            <option value="title_wildcard">Title (Wildcard)</option>
                             <option value="actor">Actor</option>
                             <option value="genre">Genre</option>
                             <option value="year">Year</option>
@@ -74,6 +77,8 @@
                 <div class="search-suggestions">
                     <button class="suggestion-btn" onclick="performSearch('The Matrix')">The Matrix</button>
                     <button class="suggestion-btn" onclick="performSearch('Tom Hanks')">Tom Hanks</button>
+                    <button class="suggestion-btn" onclick="performSearch('The *father', 'title_wildcard')">The *father (Wildcard)</button>
+                    <button class="suggestion-btn" onclick="performSearch('*man', 'title_wildcard')">*man (Wildcard)</button>
                     <button class="suggestion-btn" onclick="performSearch('Action')">Action Movies</button>
                     <button class="suggestion-btn" onclick="performSearch('1994')">Movies from 1994</button>
                 </div>
