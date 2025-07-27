@@ -126,14 +126,25 @@ class VideoSearchHandler(BaseHTTPRequestHandler):
             title_results = self.search_system.search_by_title(query, 'fuzzy', limit=5)
             actor_results = self.search_system.search_by_actor(query, limit=3)
             genre_results = self.search_system.search_by_genre(query, limit=3)
+            try:
+                year_results = self.search_system.search_by_year(int(query), limit=3)
+            except Exception:
+                year_results = []
             
             # Combine and deduplicate results
-            all_results = title_results + actor_results + genre_results
+            all_results = title_results + actor_results + genre_results + year_results
             seen_ids = set()
+            unsorted_results = []
             for result in all_results:
                 if result.video.video_id not in seen_ids:
-                    results.append(result)
+                    unsorted_results.append(result)
                     seen_ids.add(result.video.video_id)
+
+            results = sorted(
+                unsorted_results,
+                key=lambda x: (x.relevance_score, x.video.rating, x.video.year),
+                reverse=True
+            )
         
         elif search_type == 'title':
             results = self.search_system.search_by_title(query, 'fuzzy', limit)

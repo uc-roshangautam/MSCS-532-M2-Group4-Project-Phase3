@@ -460,6 +460,7 @@ class VideoTrieSystem:
     def __init__(self, cache_size=1000):
         # Use optimized tries for all categories
         self.title_trie = OptimizedTrie(cache_size)
+        self.year_trie = OptimizedTrie(cache_size)
         self.actor_trie = OptimizedTrie(cache_size)
         self.genre_trie = OptimizedTrie(cache_size)
         self.keyword_trie = OptimizedTrie(cache_size)
@@ -483,6 +484,9 @@ class VideoTrieSystem:
         
         # Add full title
         self.title_trie.insert(video.title, video_id)
+
+        # Add video year
+        self.year_trie.insert(str(video.year), video_id)
         
         # Add actors with name parts
         for actor in video.actors:
@@ -569,6 +573,20 @@ class VideoTrieSystem:
             return self.actor_trie.fuzzy_search(query)
         elif search_type == 'wildcard':
             return self.actor_trie.wildcard_search(query)
+        else:
+            return []
+
+
+    def search_year(self, query, search_type='prefix'):
+        """Enhanced actor search"""
+        if search_type == 'exact':
+            return self.year_trie.get_video_ids_for_word(query)
+        elif search_type == 'prefix':
+            return self.year_trie.search_prefix(query)
+        elif search_type == 'fuzzy':
+            return self.year_trie.fuzzy_search(query)
+        elif search_type == 'wildcard':
+            return self.year_trie.wildcard_search(query)
         else:
             return []
     

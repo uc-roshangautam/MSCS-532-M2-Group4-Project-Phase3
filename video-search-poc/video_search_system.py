@@ -248,6 +248,7 @@ class OptimizedVideoSearchSystem:
         self._update_search_stats('actor', duration, len(results), actor_name)
         
         return self._sort_and_limit_results(results, limit)
+
     
     def search_by_genre(self, genre: str, limit: int = 10) -> List[SearchResult]:
         """Enhanced genre search with intelligent ranking"""
